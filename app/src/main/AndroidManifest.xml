@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Разрешения для доступа к внешнему хранилищу (если нужно для старых версий Android) -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <!-- Разрешения для работы с интернетом (если нужно добавить позже) -->
-    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
 
     <application
         android:allowBackup="true"
@@ -24,21 +20,15 @@
         <!-- Экран редактора главы -->
         <activity
             android:name=".ChapterEditorActivity"
-            android:exported="false" />
-
-        <!-- Экран списка глав -->
+            android:exported="false" /> <!-- Экран списка глав -->
         <activity
             android:name=".ChapterListActivity"
-            android:exported="false" />
-
-        <!-- Экран добавления книги -->
+            android:exported="false" /> <!-- Экран добавления книги -->
         <activity
             android:name=".AddBookActivity"
-            android:exported="false" />
-
-        <!-- Экран приветствия (первый экран) -->
+            android:exported="false" /> <!-- Экран приветствия (первый экран) -->
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,21 +36,15 @@
             </intent-filter>
         </activity>
 
-        <!-- Экран входа -->
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-
-        <!-- Экран регистрации -->
+            android:exported="false" /> <!-- Экран регистрации -->
         <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
-
-        <!-- Главный экран с книгами -->
+            android:exported="false" /> <!-- Главный экран с книгами -->
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
     </application>
 
 </manifest>

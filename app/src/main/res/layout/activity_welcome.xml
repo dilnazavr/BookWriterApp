@@ -27,10 +27,4 @@
         android:text="Регистрация"
         android:layout_marginTop="10dp"/>
 
-    <Button
-        android:id="@+id/buttonGuest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Продолжить без регистрации"
-        android:layout_marginTop="10dp"/>
 </LinearLayout>
